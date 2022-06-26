@@ -1,0 +1,41 @@
+class Student{
+    int age;
+    int standard;
+    String firstName;
+    String lastName;
+    
+    Student(int age, int _standard, String _firstName, String _lastName){
+        this.age = age;
+        this.standard = _standard;
+        this.firstName = _firstName;
+        this.lastName = _lastName;
+    }
+    
+    void getName(){
+        System.out.println(firstName + " " + lastName);
+    }
+    
+    int ageAfter10Years(){
+        int x = 10;
+        return age + 10;
+    }
+    
+    void showData(){
+        System.out.println("My name is "+ firstName + " " + lastName + " . \nI am "+ age + " years old.\nI am in "+ standard + ".");
+    }
+    
+    int getAge(){
+        return age;
+    }
+}
+
+public class MyClass {
+    public static void main(String args[]) {
+     
+      
+      Student obj = new Student(5, 3, "Walter", "White");
+      // obj is the object of class student and Sagar have created this obj on this day 
+      obj.showData();
+      
+    //   Student obj1 = new Student();
+    //   obj
